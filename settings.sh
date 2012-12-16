@@ -1,0 +1,5 @@
+# sitove nastaveni
+
+ARDUINO_IP=192.168.4.55
+ARDUINO_PORT=23
+

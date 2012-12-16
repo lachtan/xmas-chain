@@ -1,5 +1,11 @@
 #!/bin/bash
 
+# meni nahodne intenzitu jednotlivych svetelnych vetvi
+
+set -o nounset
+
+. settings.sh
+
 function rand()
 {
 	max=$1
@@ -11,7 +17,7 @@ function light()
 	side=$1
 	max=$2
 	value=`rand $max`
-	echo "$side$value" | nc 192.168.4.55 23
+	echo "$side$value" | nc $ARDUINO_IP $ARDUINO_PORT
 }
 
 if [ $# -eq "0" ]; then
@@ -25,3 +31,5 @@ while :; do
 	light w 50
 	sleep $delay
 done
+
+
