@@ -7,4 +7,5 @@ neopakovalo. Samozrejme by bylo nejlepsi udelat si peknej plosnak ve tvaru
 Arduino shield s budicem a svorkovnici pro pripojeni zdroje i svetelnych retezu,
 ale az tak daleko se mi zachazet nechce. Zapojeni bude muset stacit :)
 
-# vim:tw=80:ts=4:wrap
+vim:tw=80:ts=4:wrap
+
