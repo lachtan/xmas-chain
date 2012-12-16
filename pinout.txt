@@ -1,0 +1,20 @@
+Arduino pinout
+
+[Aref]
+[ GND]
+[  13]
+[  12]
+[  11] PWM
+[  10] PWM
+[   9] PWM - blue left
+[   8]
+ 
+   [7]
+   [6] PWM - blue right
+   [5] PWM - white
+   [4]
+   [3] PWM 
+   [2]
+   [1]
+   [0]
+

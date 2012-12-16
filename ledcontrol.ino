@@ -1,12 +1,3 @@
-/*
-#include <Dhcp.h>
-#include <Dns.h>
-#include <EthernetClient.h>
-#include <EthernetServer.h>
-#include <EthernetUdp.h>
-#include <util.h>
-*/
-
 #include <Wire.h>
 #include <SPI.h>
 #include <Ethernet.h>
@@ -129,36 +120,3 @@ void loop()
 	delay(1);
 	client.stop();
 }
-
-void old()
-{
-	/*
-	while (true)
-	{
-		intensity += 1;
-		if (intensity > 128)
-		{
-			intensity = 0;
-		}
-		analogWrite(pwmLedPinLeft, intensity);
-		delay(30);
-	}
-	*/
-}
-
-void blik()
-{ 
-	analogWrite(pwmLedPinLeft, 255);
-	delay(500);
-	analogWrite(pwmLedPinLeft, 50);
-	delay(500);	
-} 
-
-void backup()
-{
-	digitalWrite(ledPin, HIGH);
-	delay(100);
-	digitalWrite(ledPin, LOW);
-	delay(100);
-}
-
